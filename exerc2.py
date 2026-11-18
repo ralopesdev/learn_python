@@ -13,10 +13,10 @@ print(f"Science: {science_score}")
 print(f"history: {history_score}")
 
  # Calculate the total, average, and GPA
-total = math_score + english_score + science_score + history_score
+total = round(math_score + english_score + science_score + history_score, 2)
 num_subjects = 4
 average = total / num_subjects
-gpa = (average / 100) * 4.0
+gpa = round((average / 100) * 4.0, 2)
 
  # Display the results
 print(f"\nTotal score: {total}")
